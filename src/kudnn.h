@@ -1,3 +1,4 @@
+extern "C" {
 
 cudnnStatus_t CUDNNWINAPI kudnnConvolutionForward(        cudnnHandle_t                     handle,
                                                           const void                         *alpha,
@@ -68,3 +69,5 @@ cudnnStatus_t CUDNNWINAPI kudnnPoolingBackward( cudnnHandle_t                   
                                                 const cudnnTensorDescriptor_t   destDiffDesc,
                                                 void                           *destDiffData
                                               );
+
+} // # extern "C"
