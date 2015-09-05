@@ -1,0 +1,5 @@
+*~
+*.o
+*.so
+.julia
+setup.sh

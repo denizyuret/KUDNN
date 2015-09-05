@@ -1,0 +1,4 @@
+Float32 not supported.
+CUDNN_CONVOLUTION not supported.
+Test other BLK,THR values, smaller (around 128,128) may be faster.
+kudnnPoolingBackward does not zero out its output array.
