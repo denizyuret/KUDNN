@@ -1,6 +1,7 @@
 module KUDNN
-
+using Compat
 using CUDArt,CUDNN
+
 const libkudnn = Libdl.find_library(["libkudnn"], [Pkg.dir("KUDNN/src")])
 isempty(libkudnn) && error("Cannot find libkudnn")
 
